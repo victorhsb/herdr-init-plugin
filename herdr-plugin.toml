@@ -1,0 +1,10 @@
+id = "victorhsb.worktree-init"
+name = "Worktree Init"
+version = "0.1.0"
+min_herdr_version = "0.7.0"
+description = "Copy local files and run setup when Herdr creates a Git worktree"
+platforms = ["linux", "macos"]
+
+[[events]]
+on = "worktree.created"
+command = ["python3", "worktree_init.py"]
